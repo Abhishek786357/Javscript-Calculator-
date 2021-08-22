@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>calc</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		#clear {
+			width: 160px;
+		}
+		.formstyle{
+			width: 200px;
+			height: 265px;
+			margin: auto ;
+			margin-top:50px;
+			text-align: center;
+			border:3px solid blue;
+		}
+		input{
+			width: 50px;
+			background-color: olive;
+			color: white;
+
+		}
+
+		#answerstyle{
+
+			width: 150px;		
+		}
+	</style>
+</head>
+<body>
+<div class="formstyle">
+
+	<form name="forms">
+		<input type="text" name="answer" id="answerstyle"><br></br>
+		<input type="button" value="1" onclick="forms.answer.value+='1'">
+		<input type="button" value="2" onclick="forms.answer.value+='2'">
+		<input type="button" value="3" onclick="forms.answer.value+='3'">
+<br></br>
+		<input type="button" value="4" onclick="forms.answer.value+='4'">
+		<input type="button" value="5" onclick="forms.answer.value+='5'">
+		<input type="button" value="6" onclick="forms.answer.value+='6'">
+<br></br>
+		<input type="button" value="7" onclick="forms.answer.value+='7'">
+		<input type="button" value="8" onclick="forms.answer.value+='8'">
+		<input type="button" value="9" onclick="forms.answer.value+='9'">
+<br></br>
+		<input type="button" value="0" onclick="forms.answer.value+='0'">
+		<input type="button" value="/" onclick="forms.answer.value+='/'">
+		<input type="button" value="+" onclick="forms.answer.value+='+'">
+<br></br>
+		<input type="button" value="*" onclick="forms.answer.value+='*'">
+		<input type="button" value="-" onclick="forms.answer.value+='-'">
+		<input type="button" value="=" onclick="forms.answer.value=eval(forms.answer.value)">
+<br></br>
+		<input type="button" value="Clear All" onclick="forms.answer.value= ''" id="clear">
+	</form>
+</div>
+<script type="text/javascript">	
+</script>
+</body>
+</html> 
